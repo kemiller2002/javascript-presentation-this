@@ -1,0 +1,38 @@
+<html>
+
+<head>
+
+    <script>
+        var helloWorld = "Hello World";
+
+        function nonStrict () {
+            try{
+                alert(this.helloWorld);
+            }
+            catch(e){
+                alert (e.message);
+            }
+        }
+
+        function strict () {
+            "use strict"
+            try{
+                alert(this.helloWorld);
+            }
+            catch(e){
+                alert (e.message);
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <input type="button" onclick="nonStrict()" value="Non Strict Example" />
+
+    <input type="button" onclick="strict()" value="Strict Example" />
+
+</body>
+</html>
