@@ -18,6 +18,10 @@ ObjectTwo.prototype.test = test;
 const oOne = new ObjectOne();
 const oTwo = new ObjectTwo();
 
+
+
 test(); //?
 oOne.test(); //?
 oTwo.test(); //?
+
+

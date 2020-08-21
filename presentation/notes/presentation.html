@@ -1,15 +1,104 @@
 <html>
     <head>
-
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     </head>
+
+    <style>
+        [action]{
+            border:thin solid darkblue;
+            margin:.5em;
+            padding:.5em;
+            font-weight: 500;
+        }
+        li {
+            padding: .25em;
+        }
+
+
+    </style>
 
     <body>
 
         <ul>
-            <li>Opening example</li>
-        </ul>        
-        
+            <li>Opening example
+                <ul>
+                    <li>Explain Quokka</li>
+                    <li>Explain example
+                        <ul>
+                            <li>We have a straight function that just prints hello world.</li>
+                            <li><span action>SHOW EXAMPLE NOW WITH HELLO WORLD NOW.</span></li>
 
+                            <li>We have our message container that holds our messsage</li>
+                            <li><span action>Comment out hello world and un comment message method</span></li>
+                            <li>and we get a stupid picutre of a cat.</li>
+                            <li>so what happened?</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Second Example - Share Functions
+                <ul>
+                    <li>What does this really mean in JS</li>
+                    <li>C#, etc. have similar conventions, but they are applied differently</li>
+                    <li><strong>this</strong> is about the parent like other languages, 
+                        but functions are fluid - they can change parents</li>
+                    <li>This is because JavaScript has prototype inheritance, or instance based programming.
+                            <ul>
+                                <li>This most likey came from it's origins of LISP</li>
+                                <li>
+                                    <strong>Even through JavaScript has classes, it's still a prototype based language and so we need to pay attention to how it functions, because of integration with other modules.</strong></li>
+                            </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Web page on use strict
+                <ul>
+                    <li>What does strict do?
+                        <ul>
+                            <li>ECMA Script 5</li>
+                            <li>Fixes some bad problems where variables are automatically created, etc.</li>
+                            <li>Stops <strong>this.variable</strong> when not attached.</li>
+                            <li><span action>Show Example -- talk explain code.</span></li>
+                        </ul>
+                    </li>
+                    <li>Use strict and typescript -- emitted in modules now.</li>
+                </ul>
+            </li>
+            <li>Apply (or Call)
+                <ul>
+                    <li>Explain what it does. 
+                        <ul>
+                            <li>allows you to dynamically change the parent of a function</li>
+                            <li>same could be done by add function to an object, but that gets messy.</li>
+                            <li>use once an then don't worry about the function being attached.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>This and that
+                <ul>
+                    <li><span action>pull up code and run</span></li>
+                    <li>show that code didn't override the default value.</li>
+                    <li>Allows you to access scope without this.
+                        <ul>
+                            <li>that is a variable and is accessed through closure</li>
+                        </ul>
+                    </li>
+                    <li>Some places feel this a "bad" form, but it's been a convention for a long time,
+                        so you'll still run into it. 
+                    </li>
+                </ul>
+            </li>
+            <li>Lambda expressions
+                <ul>
+                    <li><span action>pull up code and run.</span></li>
+                    <li>show that lamdba didn't have <strong>this</strong> replaced.</li>
+                    <li>explain why</li>
+                </ul>
+            </li>
+            <li>Bind</li>
+        </ul>    
 
     </body>
 

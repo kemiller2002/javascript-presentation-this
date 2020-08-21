@@ -10,9 +10,8 @@ class MessageContainer{
 }
 
 
-
 function MessageThatINeedSent () {
-    this.message = "I AM THE NEW MESSAGE THAT ALL PEOPLE MUST HERE;"
+    this.message = "I AM THE NEW MESSAGE THAT ALL PEOPLE MUST HEAR;"
 }
 
 

@@ -23,11 +23,10 @@ function printHelloWorld () {
 
 function printMessageInContainer() {
     const container = new MessageContainer("I am being held by the container.");
-    logMessageToSceen(container.getMessage);
 
+    const boundMessage = container.getMessage.bind(container);
+    
+    logMessageToSceen(boundMessage);
 }
 
-
-
-printHelloWorld();
-//printMessageInContainer();
+printMessageInContainer();
